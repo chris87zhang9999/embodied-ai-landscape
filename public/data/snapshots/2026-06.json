@@ -1,0 +1,2936 @@
+{
+  "period": "2026-06",
+  "generated_at": "2026-06-30T09:22:04.459611+00:00",
+  "analysis": {
+    "summary": "2026年6月具身智能产业进入关键量产窗口期。特斯拉Optimus Generation 3开始小批量出厂，带动整机及核心零部件（无框电机、谐波减速器）需求验证。VLA端到端控制在工厂场景展示突破性结果，但距离大规模商业化仍需12-18个月。原材料端稀土价格因需求预期上涨约8%。",
+    "highlights": []
+  },
+  "nodes": [
+    {
+      "id": "chips",
+      "name": "芯片/算力",
+      "layer": "上游",
+      "tech_difficulty": 8,
+      "commercialization": 9,
+      "market_size_b": 200,
+      "companies": [
+        "NVIDIA",
+        "AMD",
+        "Intel"
+      ],
+      "investment_thesis": "随着人工智能和云计算的快速发展，芯片/算力需求持续增长，投资于具有技术创新和成本优势的芯片制造商将带来长期回报。",
+      "children": [
+        {
+          "id": "gpu",
+          "name": "GPU",
+          "layer": "中游",
+          "tech_difficulty": 9,
+          "commercialization": 9,
+          "market_size_b": 30,
+          "companies": [
+            "NVIDIA",
+            "AMD",
+            "Imagination Technologies"
+          ],
+          "children": [
+            {
+              "id": "silicon",
+              "name": "硅",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "wafer",
+              "name": "晶圆",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "assembly",
+              "name": "封装",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "TSMC",
+                "ASM",
+                "United Microelectronics Corporation (UMC)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "npu",
+          "name": "NPU",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 9,
+          "market_size_b": 20,
+          "companies": [
+            "Google",
+            "Baidu",
+            "Huawei"
+          ],
+          "children": [
+            {
+              "id": "silicon",
+              "name": "硅",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "wafer",
+              "name": "晶圆",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "assembly",
+              "name": "封装",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "TSMC",
+                "ASM",
+                "United Microelectronics Corporation (UMC)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "soc",
+          "name": "SoC",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 9,
+          "market_size_b": 50,
+          "companies": [
+            "Samsung",
+            "Intel",
+            "Qualcomm"
+          ],
+          "children": [
+            {
+              "id": "silicon",
+              "name": "硅",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "wafer",
+              "name": "晶圆",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "assembly",
+              "name": "封装",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "TSMC",
+                "ASM",
+                "United Microelectronics Corporation (UMC)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "edge_relay",
+          "name": "边缘推理芯片",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 15,
+          "companies": [
+            "Intel",
+            "NVIDIA",
+            "AMD"
+          ],
+          "children": [
+            {
+              "id": "silicon",
+              "name": "硅",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "wafer",
+              "name": "晶圆",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "assembly",
+              "name": "封装",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "TSMC",
+                "ASM",
+                "United Microelectronics Corporation (UMC)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "infrastructure",
+          "name": "算力基础设施",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 25,
+          "companies": [
+            "Hewlett Packard Enterprise",
+            "Dell Technologies",
+            "IBM"
+          ],
+          "children": [
+            {
+              "id": "silicon",
+              "name": "硅",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "wafer",
+              "name": "晶圆",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "assembly",
+              "name": "封装",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "TSMC",
+                "ASM",
+                "United Microelectronics Corporation (UMC)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "name": "传感器",
+      "layer": "上游",
+      "tech_difficulty": 7,
+      "commercialization": 8,
+      "market_size_b": 50,
+      "companies": [
+        "Honeywell",
+        "Bosch Sensortec",
+        "STMicroelectronics"
+      ],
+      "investment_thesis": "随着物联网和智能制造的快速发展，传感器市场将持续增长，投资于具有创新技术和广泛应用场景的传感器企业将具有长期增长潜力。",
+      "children": [
+        {
+          "id": "sensors_rgb",
+          "name": "视觉传感器",
+          "layer": "中游",
+          "tech_difficulty": 6,
+          "commercialization": 8,
+          "market_size_b": 20,
+          "companies": [
+            "Sony",
+            "Omron",
+            "Panasonic"
+          ],
+          "children": [
+            {
+              "id": "sensors_rgb_cmos",
+              "name": "CMOS图像传感器",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "sensors_rgb_lenses",
+              "name": "光学镜头",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "sensors_rgb_mems",
+              "name": "MEMS工艺",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "sensors_depth",
+          "name": "深度传感器",
+          "layer": "中游",
+          "tech_difficulty": 6,
+          "commercialization": 8,
+          "market_size_b": 15,
+          "companies": [
+            "Ouster",
+            "Luminar Technologies",
+            "Velodyne LiDAR"
+          ],
+          "children": [
+            {
+              "id": "sensors_depth_imu",
+              "name": "IMU传感器",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "sensors_depth_lidar",
+              "name": "激光雷达",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "sensors_haptic",
+          "name": "触觉传感器",
+          "layer": "中游",
+          "tech_difficulty": 5,
+          "commercialization": 7,
+          "market_size_b": 10,
+          "companies": [
+            "Microchip",
+            "TE Connectivity",
+            "Tactile Displays"
+          ],
+          "children": [
+            {
+              "id": "sensors_haptic_materials",
+              "name": "触觉材料",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "sensors_force",
+          "name": "力觉传感器",
+          "layer": "中游",
+          "tech_difficulty": 5,
+          "commercialization": 7,
+          "market_size_b": 8,
+          "companies": [
+            "Honeywell",
+            "Kistler Group",
+            "Sensata Technologies"
+          ],
+          "children": [
+            {
+              "id": "sensors_force_materials",
+              "name": "力觉材料",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "actuators",
+      "name": "执行器/电机",
+      "layer": "上游",
+      "tech_difficulty": 7,
+      "commercialization": 8,
+      "market_size_b": 100,
+      "companies": [
+        "Nidec Corporation",
+        "Panasonic Corporation",
+        "Siemens AG"
+      ],
+      "children": [
+        {
+          "id": "hollow_cup_motor",
+          "name": "空心杯电机",
+          "layer": "中游",
+          "tech_difficulty": 6,
+          "commercialization": 9,
+          "market_size_b": 50,
+          "companies": [
+            "Maxon Motor AG",
+            "Tecumseh Products Company",
+            "Bosch Rexroth AG"
+          ],
+          "children": [
+            {
+              "id": "ndfeb",
+              "name": "NdFeB",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "silicon_steel",
+              "name": "硅钢",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "enamelled_copper_wire",
+              "name": "漆包线",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "frameless_torque_motor",
+          "name": "无框力矩电机",
+          "layer": "中游",
+          "tech_difficulty": 6,
+          "commercialization": 9,
+          "market_size_b": 40,
+          "companies": [
+            "Honeywell International Inc.",
+            "Schneider Electric SE",
+            "Rockwell Automation Inc."
+          ],
+          "children": [
+            {
+              "id": "ndfeb",
+              "name": "NdFeB",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "silicon_steel",
+              "name": "硅钢",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "copper_ore",
+              "name": "铜矿",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "rare_earth_mineral",
+              "name": "稀土矿",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "linear_motor",
+          "name": "直线电机",
+          "layer": "中游",
+          "tech_difficulty": 5,
+          "commercialization": 8,
+          "market_size_b": 30,
+          "companies": [
+            "Thyssenkrupp AG",
+            "Hitachi, Ltd.",
+            "General Electric Company"
+          ],
+          "children": [
+            {
+              "id": "ndfeb",
+              "name": "NdFeB",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "silicon_steel",
+              "name": "硅钢",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "copper_ore",
+              "name": "铜矿",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "rare_earth_mineral",
+              "name": "稀土矿",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ],
+      "investment_thesis": "该细分领域具备投资价值。"
+    },
+    {
+      "id": "reducers",
+      "name": "精密减速器",
+      "layer": "上游",
+      "tech_difficulty": 7,
+      "commercialization": 8,
+      "market_size_b": 50,
+      "companies": [
+        "Harmonic Drive",
+        "Nabtesco",
+        "Schunk"
+      ],
+      "investment_thesis": "精密减速器在自动化和机器人行业中扮演着核心角色，随着工业自动化程度的提高，对精密减速器的需求将持续增长。",
+      "children": [
+        {
+          "id": "harmonic_reducers",
+          "name": "谐波减速器",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 9,
+          "market_size_b": 20,
+          "companies": [
+            "Harmonic Drive",
+            "Nabtesco",
+            "Schunk"
+          ],
+          "children": [
+            {
+              "id": "bearings_steel",
+              "name": "轴承钢",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "special_steels",
+              "name": "特种钢材",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "precision_machining",
+              "name": "精密机加工",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 15,
+              "companies": [
+                "Mitsubishi Materials",
+                "Fujikin Incorporated",
+                "Mori Seiki"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "rv_reducers",
+          "name": "RV减速器",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 25,
+          "companies": [
+            "Harmonic Drive",
+            "Nabtesco",
+            "Schunk"
+          ],
+          "children": [
+            {
+              "id": "bearings_steel",
+              "name": "轴承钢",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "special_steels",
+              "name": "特种钢材",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "precision_machining",
+              "name": "精密机加工",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 15,
+              "companies": [
+                "Mitsubishi Materials",
+                "Fujikin Incorporated",
+                "Mori Seiki"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "planetary_reducers",
+          "name": "行星减速器",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 30,
+          "companies": [
+            "Harmonic Drive",
+            "Nabtesco",
+            "Schunk"
+          ],
+          "children": [
+            {
+              "id": "bearings_steel",
+              "name": "轴承钢",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "special_steels",
+              "name": "特种钢材",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "precision_machining",
+              "name": "精密机加工",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 15,
+              "companies": [
+                "Mitsubishi Materials",
+                "Fujikin Incorporated",
+                "Mori Seiki"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "dexterous",
+      "name": "灵巧手",
+      "layer": "中游",
+      "tech_difficulty": 8,
+      "commercialization": 3,
+      "market_size_b": 8,
+      "companies": [
+        "Shadow Robot",
+        "Dexterity",
+        "Inspire Robots",
+        "Agility Robotics",
+        "Tesla"
+      ],
+      "investment_thesis": "灵巧手是具身智能机器人执行精细任务的关键末端执行器，当前技术壁垒高，商业化尚在早期验证阶段。触觉传感、驱动系统和结构材料是核心技术点，未来3-5年随整机放量有望快速成长。",
+      "children": [
+        {
+          "id": "dexterous_drive",
+          "name": "灵巧手驱动系统",
+          "layer": "上游",
+          "tech_difficulty": 8,
+          "commercialization": 3,
+          "market_size_b": 2,
+          "companies": [
+            "Festo",
+            "Maxon",
+            "Dynamixel"
+          ],
+          "investment_thesis": "精密微型电机与线驱动方案竞争，线驱动成本更优但可靠性待验证。",
+          "children": [
+            {
+              "id": "dexterous_drive_motor",
+              "name": "空心杯微型电机",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 5,
+              "market_size_b": 0.5,
+              "companies": [
+                "Maxon",
+                "Faulhaber",
+                "鸣志电器"
+              ],
+              "investment_thesis": "空心杯电机为灵巧手提供高扭矩密度驱动。",
+              "children": [
+                {
+                  "id": "dexterous_drive_motor_ndfeb",
+                  "name": "NdFeB永磁体",
+                  "layer": "原材料",
+                  "tech_difficulty": 5,
+                  "commercialization": 7,
+                  "market_size_b": 12,
+                  "companies": [
+                    "中科三环",
+                    "宁波韵升",
+                    "TDK"
+                  ],
+                  "investment_thesis": "稀土永磁是电机性能基础，稀土供应链集中于中国。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dexterous_tactile",
+          "name": "触觉传感器",
+          "layer": "上游",
+          "tech_difficulty": 9,
+          "commercialization": 2,
+          "market_size_b": 1.5,
+          "companies": [
+            "Syntouch",
+            "BioTac",
+            "XELA Robotics",
+            "茂勤"
+          ],
+          "investment_thesis": "触觉感知是灵巧操作的关键缺失模态，技术壁垒极高，全球具备量产能力的厂商稀缺。",
+          "children": [
+            {
+              "id": "dexterous_tactile_mems",
+              "name": "MEMS压力传感单元",
+              "layer": "上游",
+              "tech_difficulty": 8,
+              "commercialization": 4,
+              "market_size_b": 0.8,
+              "companies": [
+                "Bosch Sensortec",
+                "STMicro",
+                "TDK InvenSense"
+              ],
+              "investment_thesis": "MEMS工艺是触觉阵列的核心制造基础。",
+              "children": [
+                {
+                  "id": "dexterous_tactile_mems_si",
+                  "name": "硅晶圆",
+                  "layer": "原材料",
+                  "tech_difficulty": 6,
+                  "commercialization": 8,
+                  "market_size_b": 15,
+                  "companies": [
+                    "Shin-Etsu",
+                    "Sumco",
+                    "环球晶圆"
+                  ],
+                  "investment_thesis": "硅晶圆为MEMS工艺基础材料，全球供应稳定。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dexterous_structure",
+          "name": "指节结构件",
+          "layer": "上游",
+          "tech_difficulty": 5,
+          "commercialization": 5,
+          "market_size_b": 1,
+          "companies": [
+            "金属3D打印厂商",
+            "精密机加工厂"
+          ],
+          "investment_thesis": "铝合金/碳纤维轻量化结构件，工艺壁垒中等。",
+          "children": [
+            {
+              "id": "dexterous_structure_carbon",
+              "name": "碳纤维复合材料",
+              "layer": "原材料",
+              "tech_difficulty": 6,
+              "commercialization": 6,
+              "market_size_b": 5,
+              "companies": [
+                "东丽",
+                "SGL Carbon",
+                "中复神鹰"
+              ],
+              "investment_thesis": "碳纤维提供高强度低重量结构支撑，是轻量化方案首选。",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "dexterous_control",
+          "name": "灵巧手控制板",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 3,
+          "market_size_b": 0.8,
+          "companies": [
+            "德州仪器",
+            "恩智浦",
+            "英飞凌"
+          ],
+          "investment_thesis": "多指协同实时控制需要高性能嵌入式平台，DSP/FPGA方案竞争。",
+          "children": [
+            {
+              "id": "dexterous_control_pcb",
+              "name": "高密度PCB",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 7,
+              "market_size_b": 2,
+              "companies": [
+                "深南电路",
+                "TTM",
+                "鹏鼎控股"
+              ],
+              "investment_thesis": "灵巧手控制电路集成度高，需要HDI或刚挠板工艺。",
+              "children": [
+                {
+                  "id": "dexterous_control_pcb_cu",
+                  "name": "铜箔",
+                  "layer": "原材料",
+                  "tech_difficulty": 3,
+                  "commercialization": 8,
+                  "market_size_b": 3,
+                  "companies": [
+                    "铜陵有色",
+                    "诺德股份",
+                    "JX金属"
+                  ],
+                  "investment_thesis": "铜为PCB导电层基础材料，大宗商品属性强。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simulation",
+      "name": "仿真平台",
+      "layer": "中游",
+      "tech_difficulty": 7,
+      "commercialization": 5,
+      "market_size_b": 6,
+      "companies": [
+        "NVIDIA Isaac Sim",
+        "Gazebo/ROS",
+        "MuJoCo",
+        "Webots",
+        "Ansys"
+      ],
+      "investment_thesis": "仿真平台是Sim2Real技术路线的基础设施，加速机器人训练和验证。NVIDIA凭借GPU优势占据高地，但开源生态依然强势。随具身智能数据需求爆发，仿真平台价值将持续上升。",
+      "children": [
+        {
+          "id": "sim_physics",
+          "name": "物理引擎",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 5,
+          "market_size_b": 1.5,
+          "companies": [
+            "Nvidia PhysX",
+            "MuJoCo (Google DeepMind)",
+            "Bullet Physics"
+          ],
+          "investment_thesis": "刚体/柔体/流体物理仿真是机器人学习环境的基础，精度决定Sim2Real迁移效率。",
+          "children": [
+            {
+              "id": "sim_physics_gpu",
+              "name": "GPU加速计算",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 50,
+              "companies": [
+                "NVIDIA",
+                "AMD",
+                "Intel"
+              ],
+              "investment_thesis": "并行仿真需要高算力GPU，NVIDIA在CUDA生态占主导地位。",
+              "children": [
+                {
+                  "id": "sim_physics_gpu_hbm",
+                  "name": "高带宽存储HBM",
+                  "layer": "原材料",
+                  "tech_difficulty": 9,
+                  "commercialization": 6,
+                  "market_size_b": 8,
+                  "companies": [
+                    "SK Hynix",
+                    "Micron",
+                    "Samsung"
+                  ],
+                  "investment_thesis": "HBM是AI训练GPU的关键内存组件，供应链高度集中。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sim_render",
+          "name": "渲染引擎",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 6,
+          "market_size_b": 1,
+          "companies": [
+            "Unreal Engine",
+            "Unity",
+            "NVIDIA Omniverse"
+          ],
+          "investment_thesis": "照片级渲染缩短视觉Sim2Real差距，是感知模型训练的重要工具。",
+          "children": [
+            {
+              "id": "sim_render_shader",
+              "name": "光线追踪硬件支持",
+              "layer": "上游",
+              "tech_difficulty": 8,
+              "commercialization": 7,
+              "market_size_b": 10,
+              "companies": [
+                "NVIDIA RTX",
+                "AMD RDNA",
+                "Intel Arc"
+              ],
+              "investment_thesis": "硬件光追加速实时真实感渲染，降低仿真与真实环境的视觉差。",
+              "children": [
+                {
+                  "id": "sim_render_shader_tsmc",
+                  "name": "先进制程芯片代工",
+                  "layer": "原材料",
+                  "tech_difficulty": 10,
+                  "commercialization": 7,
+                  "market_size_b": 80,
+                  "companies": [
+                    "TSMC",
+                    "Samsung Foundry",
+                    "Intel Foundry"
+                  ],
+                  "investment_thesis": "3nm/5nm制程是高性能GPU制造的基础，TSMC垄断地位突出。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sim_sim2real",
+          "name": "Sim2Real工具链",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 3,
+          "market_size_b": 0.8,
+          "companies": [
+            "OpenAI",
+            "Google DeepMind",
+            "Physical Intelligence"
+          ],
+          "investment_thesis": "域随机化、域适应等技术弥合仿真与真实环境差距，是迁移效率的关键。",
+          "children": [
+            {
+              "id": "sim_sim2real_compute",
+              "name": "训练算力集群",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 7,
+              "market_size_b": 100,
+              "companies": [
+                "AWS",
+                "Azure",
+                "Google Cloud"
+              ],
+              "investment_thesis": "大规模仿真训练依赖云端GPU集群，算力成本是RL训练的主要约束。",
+              "children": [
+                {
+                  "id": "sim_sim2real_compute_dc",
+                  "name": "数据中心基础设施",
+                  "layer": "原材料",
+                  "tech_difficulty": 5,
+                  "commercialization": 8,
+                  "market_size_b": 200,
+                  "companies": [
+                    "Equinix",
+                    "Digital Realty",
+                    "GDS"
+                  ],
+                  "investment_thesis": "数据中心是AI算力的物理承载，土地/电力/散热是核心资源。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sim_digital_twin",
+          "name": "数字孪生平台",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 5,
+          "market_size_b": 3,
+          "companies": [
+            "Siemens",
+            "PTC",
+            "Dassault Systèmes",
+            "NVIDIA Omniverse"
+          ],
+          "investment_thesis": "工厂数字孪生与机器人仿真结合，打通规划到执行的全链路验证。",
+          "children": [
+            {
+              "id": "sim_digital_twin_sensor",
+              "name": "工厂传感器数据采集",
+              "layer": "上游",
+              "tech_difficulty": 4,
+              "commercialization": 7,
+              "market_size_b": 5,
+              "companies": [
+                "Honeywell",
+                "Siemens",
+                "施耐德电气"
+              ],
+              "investment_thesis": "IoT传感器是数字孪生的数据基础，工业互联网基础设施持续扩张。",
+              "children": [
+                {
+                  "id": "sim_digital_twin_sensor_iot",
+                  "name": "工业级MCU",
+                  "layer": "原材料",
+                  "tech_difficulty": 5,
+                  "commercialization": 8,
+                  "market_size_b": 10,
+                  "companies": [
+                    "STMicro",
+                    "NXP",
+                    "Renesas"
+                  ],
+                  "investment_thesis": "工业MCU为IoT节点提供计算与通信能力，市场成熟稳定。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "VLA/具身AI模型",
+      "layer": "中游",
+      "tech_difficulty": 8,
+      "commercialization": 6,
+      "market_size_b": 10,
+      "companies": [
+        "OpenAI",
+        "DeepMind",
+        "Google Brain"
+      ],
+      "investment_thesis": "投资于VLA/具身AI模型领域，关注在基础模型、端到端控制、具身数据和强化学习框架方面的技术创新，以及这些技术在商业化应用中的潜力。",
+      "children": [
+        {
+          "id": "vla_foundation_models",
+          "name": "基础模型",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 6,
+          "market_size_b": 5,
+          "companies": [
+            "OpenAI",
+            "Google Brain",
+            "Facebook AI Research"
+          ],
+          "children": [
+            {
+              "id": "vla_foundation_models_neural_networks",
+              "name": "神经网络",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 6,
+              "market_size_b": 3,
+              "companies": [
+                "IBM Watson",
+                "NVIDIA",
+                "Google"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_foundation_models_reinforcement_learning",
+              "name": "强化学习",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 6,
+              "market_size_b": 4,
+              "companies": [
+                "DeepMind",
+                "OpenAI",
+                "Google Brain"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_foundation_models_transformers",
+              "name": "Transformer模型",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 7,
+              "market_size_b": 5,
+              "companies": [
+                "Google",
+                "Facebook AI Research",
+                "OpenAI"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "vla_end_to_end_control",
+          "name": "端到端控制",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 5,
+          "market_size_b": 4,
+          "companies": [
+            "Bosch",
+            "Aptiv",
+            "Waymo"
+          ],
+          "children": [
+            {
+              "id": "vla_end_to_end_control_driving",
+              "name": "自动驾驶",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 5,
+              "market_size_b": 6,
+              "companies": [
+                "Waymo",
+                "Tesla",
+                "Bosch"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_end_to_end_control_manufacturing",
+              "name": "制造控制",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 6,
+              "market_size_b": 3,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "Aptiv"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_end_to_end_control_home_automation",
+              "name": "智能家居控制",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 7,
+              "market_size_b": 2,
+              "companies": [
+                "Amazon",
+                "Google Nest",
+                "Apple HomeKit"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "vla_embodied_data",
+          "name": "具身数据",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 6,
+          "market_size_b": 5,
+          "companies": [
+            "IBM Watson",
+            "Microsoft Azure",
+            "Google Cloud"
+          ],
+          "children": [
+            {
+              "id": "vla_embodied_data_collection",
+              "name": "数据收集",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 6,
+              "market_size_b": 4,
+              "companies": [
+                "SenseTime",
+                "IBM Watson",
+                "Google Cloud"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_embodied_data_storage",
+              "name": "数据存储",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 7,
+              "market_size_b": 5,
+              "companies": [
+                "Amazon Web Services",
+                "Microsoft Azure",
+                "Google Cloud"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_embodied_data_analysis",
+              "name": "数据分析",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 6,
+              "market_size_b": 5,
+              "companies": [
+                "IBM Watson",
+                "SAS",
+                "Google Cloud"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "vla_reinforcement_learning_frameworks",
+          "name": "强化学习框架",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 6,
+          "market_size_b": 4,
+          "companies": [
+            "OpenAI",
+            "DeepMind",
+            "Google Brain"
+          ],
+          "children": [
+            {
+              "id": "vla_reinforcement_learning_frameworks_open_source",
+              "name": "开源框架",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 6,
+              "market_size_b": 3,
+              "companies": [
+                "OpenAI",
+                "DeepMind",
+                "Google Brain"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_reinforcement_learning_frameworks_commercial",
+              "name": "商业框架",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 6,
+              "market_size_b": 4,
+              "companies": [
+                "IBM Watson",
+                "Microsoft Azure",
+                "Google Cloud"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "vla_reinforcement_learning_frameworks_industry_specific",
+              "name": "行业特定框架",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 5,
+              "market_size_b": 3,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "Aptiv"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "motion_control",
+      "name": "运控系统",
+      "layer": "中游",
+      "tech_difficulty": 7,
+      "commercialization": 8,
+      "market_size_b": 50,
+      "companies": [
+        "ABB",
+        "Siemens",
+        "Rockwell Automation"
+      ],
+      "investment_thesis": "运控系统在自动化和智能制造领域扮演着核心角色，随着工业4.0的推进，对高精度、高效率的运控系统的需求将持续增长。",
+      "children": [
+        {
+          "id": "real_time_controller",
+          "name": "实时控制器",
+          "layer": "中游",
+          "tech_difficulty": 6,
+          "commercialization": 8,
+          "market_size_b": 20,
+          "companies": [
+            "Texas Instruments",
+            "Xilinx",
+            "Intel"
+          ],
+          "children": [
+            {
+              "id": "fpga",
+              "name": "FPGA",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "Xilinx",
+                "Intel",
+                "Altera (now part of Intel)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "dsp",
+              "name": "DSP",
+              "layer": "上游",
+              "tech_difficulty": 6,
+              "commercialization": 9,
+              "market_size_b": 8,
+              "companies": [
+                "Texas Instruments",
+                "Analog Devices",
+                "Freescale (now part of NXP)"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "power_semiconductor",
+              "name": "功率半导体",
+              "layer": "上游",
+              "tech_difficulty": 6,
+              "commercialization": 9,
+              "market_size_b": 12,
+              "companies": [
+                "Infineon",
+                "ON Semiconductor",
+                "STMicroelectronics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "servo_drive",
+          "name": "伺服驱动",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 25,
+          "companies": [
+            "Yaskawa",
+            "Siemens",
+            "Rockwell Automation"
+          ],
+          "children": [
+            {
+              "id": "motor",
+              "name": "电机",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 9,
+              "market_size_b": 15,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "Yaskawa"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "control_circuit",
+              "name": "控制电路",
+              "layer": "上游",
+              "tech_difficulty": 6,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "Texas Instruments",
+                "Analog Devices",
+                "STMicroelectronics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "power半导体",
+              "name": "功率半导体",
+              "layer": "上游",
+              "tech_difficulty": 6,
+              "commercialization": 9,
+              "market_size_b": 12,
+              "companies": [
+                "Infineon",
+                "ON Semiconductor",
+                "STMicroelectronics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "motion_planning_algorithm",
+          "name": "运动规划算法",
+          "layer": "中游",
+          "tech_difficulty": 8,
+          "commercialization": 7,
+          "market_size_b": 10,
+          "companies": [
+            "ABB",
+            "Siemens",
+            "Rockwell Automation"
+          ],
+          "children": [
+            {
+              "id": "software_platform",
+              "name": "软件平台",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 8,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "ABB"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "simulation_tool",
+              "name": "仿真工具",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 7,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "ABB"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "algorithmic_library",
+              "name": "算法库",
+              "layer": "上游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 6,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "ABB"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "pcb",
+          "name": "PCB",
+          "layer": "上游",
+          "tech_difficulty": 5,
+          "commercialization": 9,
+          "market_size_b": 30,
+          "companies": [
+            "Fujitsu",
+            "Nokya",
+            "Shin-Etsu"
+          ],
+          "children": [],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "humanoid",
+      "name": "人形整机",
+      "layer": "中游",
+      "tech_difficulty": 8,
+      "commercialization": 7,
+      "market_size_b": 20,
+      "companies": [
+        "Honda Motor Co., Ltd.",
+        "Boston Dynamics",
+        "Softbank Robotics"
+      ],
+      "investment_thesis": "随着机器人技术的不断进步，人形整机市场有望持续增长，特别是在服务机器人领域。",
+      "children": [
+        {
+          "id": "humanoid_system_integration",
+          "name": "系统集成",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 15,
+          "companies": [
+            "ABB Robotics",
+            "KUKA AG",
+            "Fanuc Corporation"
+          ],
+          "children": [
+            {
+              "id": "humanoid_control_system",
+              "name": "人形控制系统",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 7,
+              "market_size_b": 10,
+              "companies": [
+                "Yaskawa Electric Corporation",
+                "Rockwell Automation",
+                "Siemens AG"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humanoid_sensors",
+              "name": "人形传感器",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 8,
+              "companies": [
+                "Honeywell International Inc.",
+                "TE Connectivity",
+                "Omron Corporation"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humanoid_drivers",
+              "name": "人形驱动器",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 9,
+              "companies": [
+                "Maxon Motor AG",
+                "Harmonic Drive Systems Inc.",
+                "Nidec Corporation"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "humanoid_structure_design",
+          "name": "结构设计",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 12,
+          "companies": [
+            "Rheinmetall AG",
+            "Siemens AG",
+            "FANUC Corporation"
+          ],
+          "children": [
+            {
+              "id": "humanoid_aluminum_castings",
+              "name": "铝合金铸件",
+              "layer": "原材料",
+              "tech_difficulty": 5,
+              "commercialization": 9,
+              "market_size_b": 5,
+              "companies": [
+                "Alcoa Inc.",
+                "Rio Tinto Alcan",
+                "Norsk Hydro"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humanoid_carbon_fiber",
+              "name": "碳纤维",
+              "layer": "原材料",
+              "tech_difficulty": 6,
+              "commercialization": 8,
+              "market_size_b": 4,
+              "companies": [
+                "Teijin Limited",
+                "Hexcel Corporation",
+                "Toho Tenax Co., Ltd."
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humanoid_titanium_alloy",
+              "name": "钛合金",
+              "layer": "原材料",
+              "tech_difficulty": 6,
+              "commercialization": 8,
+              "market_size_b": 3,
+              "companies": [
+                "TiAl Group",
+                "AeroMet Inc.",
+                "Titanium Metals Corporation"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "humanoid_assembly",
+          "name": "整机装配",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 13,
+          "companies": [
+            "Siemens AG",
+            "ABB Robotics",
+            "KUKA AG"
+          ],
+          "children": [
+            {
+              "id": "humanoid_electronic_assembly",
+              "name": "电子组装",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 11,
+              "companies": [
+                "Jabil Circuit Inc.",
+                "Foxconn Technology Group",
+                "Sanmina Corporation"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humanoid_mechanical_assembly",
+              "name": "机械组装",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 12,
+              "companies": [
+                "Siemens AG",
+                "ABB Robotics",
+                "KUKA AG"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humanoid_software_integration",
+              "name": "软件集成",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 10,
+              "companies": [
+                "Siemens AG",
+                "ABB Robotics",
+                "KUKA AG"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "data_collection",
+      "name": "数据采集/标注",
+      "layer": "中游",
+      "tech_difficulty": 5,
+      "commercialization": 7,
+      "market_size_b": 50,
+      "companies": [
+        "SenseTime",
+        "Google",
+        "Amazon"
+      ],
+      "investment_thesis": "数据采集和标注在人工智能领域至关重要，随着AI技术的应用越来越广泛，数据采集和标注的需求将持续增长。",
+      "children": [
+        {
+          "id": "teleoperation_equipment",
+          "name": "遥操作设备",
+          "layer": "中游",
+          "tech_difficulty": 6,
+          "commercialization": 6,
+          "market_size_b": 15,
+          "companies": [
+            "Rethink Robotics",
+            "ABB",
+            "FANUC"
+          ],
+          "investment_thesis": "遥操作设备是远程控制和自动化领域的核心，随着远程操作技术的进步，其市场需求将增加。",
+          "children": [
+            {
+              "id": "optical_element",
+              "name": "光学元件",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 8,
+              "market_size_b": 10,
+              "companies": [
+                "Schott",
+                "Corning",
+                "OHara"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "actuator",
+              "name": "执行器",
+              "layer": "上游",
+              "tech_difficulty": 4,
+              "commercialization": 7,
+              "market_size_b": 8,
+              "companies": [
+                "Sick AG",
+                "Honeywell",
+                "Rockwell Automation"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "control_system",
+              "name": "控制系统",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 7,
+              "market_size_b": 12,
+              "companies": [
+                "Siemens",
+                "Rockwell Automation",
+                "ABB"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "motion_capturing_system",
+          "name": "动捕系统",
+          "layer": "中游",
+          "tech_difficulty": 5,
+          "commercialization": 7,
+          "market_size_b": 18,
+          "companies": [
+            "Motion Analysis",
+            "Vicon",
+            "Northern Digital"
+          ],
+          "investment_thesis": "动捕系统在电影制作和运动科学领域有着广泛的应用，其技术不断进步，市场需求稳定增长。",
+          "children": [
+            {
+              "id": "sensors",
+              "name": "传感器",
+              "layer": "上游",
+              "tech_difficulty": 4,
+              "commercialization": 8,
+              "market_size_b": 8,
+              "companies": [
+                "Honeywell",
+                "SICK AG",
+                "Teledyne FLIR Systems"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "data_processing_unit",
+              "name": "数据处理单元",
+              "layer": "上游",
+              "tech_difficulty": 4,
+              "commercialization": 7,
+              "market_size_b": 7,
+              "companies": [
+                "National Instruments",
+                "Texas Instruments",
+                "Xilinx"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "tracking_software",
+              "name": "跟踪软件",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 6,
+              "market_size_b": 6,
+              "companies": [
+                "OptiTrack",
+                "Qualisys",
+                "Northern Digital"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "data_annotating_platform",
+          "name": "数据标注平台",
+          "layer": "中游",
+          "tech_difficulty": 4,
+          "commercialization": 7,
+          "market_size_b": 25,
+          "companies": [
+            "Labelbox",
+            "Turbo.annotation",
+            "Scale AI"
+          ],
+          "investment_thesis": "数据标注平台是AI数据准备的关键工具，随着AI技术的发展，对高质量标注数据的需求日益增长。",
+          "children": [
+            {
+              "id": "annotation_tool",
+              "name": "标注工具",
+              "layer": "上游",
+              "tech_difficulty": 4,
+              "commercialization": 8,
+              "market_size_b": 6,
+              "companies": [
+                "LabelImg",
+                "CVAT",
+                "Turbo.annotation"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "cloud_computing_resources",
+              "name": "云计算资源",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 9,
+              "market_size_b": 50,
+              "companies": [
+                "Amazon Web Services",
+                "Microsoft Azure",
+                "Google Cloud Platform"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "server",
+              "name": "服务器",
+              "layer": "上游",
+              "tech_difficulty": 5,
+              "commercialization": 8,
+              "market_size_b": 25,
+              "companies": [
+                "Dell EMC",
+                "HPE",
+                "Lenovo"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "sensor",
+          "name": "传感器",
+          "layer": "上游",
+          "tech_difficulty": 4,
+          "commercialization": 8,
+          "market_size_b": 8,
+          "companies": [
+            "Honeywell",
+            "SICK AG",
+            "Teledyne FLIR Systems"
+          ],
+          "children": [],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "imu",
+          "name": "IMU",
+          "layer": "上游",
+          "tech_difficulty": 5,
+          "commercialization": 7,
+          "market_size_b": 10,
+          "companies": [
+            "InvenSense",
+            "STMicroelectronics",
+            "Bosch Sensortec"
+          ],
+          "children": [],
+          "investment_thesis": "该细分领域具备投资价值。"
+        },
+        {
+          "id": "server",
+          "name": "服务器",
+          "layer": "上游",
+          "tech_difficulty": 5,
+          "commercialization": 8,
+          "market_size_b": 25,
+          "companies": [
+            "Dell EMC",
+            "HPE",
+            "Lenovo"
+          ],
+          "children": [],
+          "investment_thesis": "该细分领域具备投资价值。"
+        }
+      ]
+    },
+    {
+      "id": "industrial",
+      "name": "工业场景集成",
+      "layer": "下游",
+      "tech_difficulty": 5,
+      "commercialization": 6,
+      "market_size_b": 25,
+      "companies": [
+        "ABB",
+        "KUKA",
+        "FANUC",
+        "优必选",
+        "傅里叶智能"
+      ],
+      "investment_thesis": "工业场景是人形机器人最接近商业化落地的方向，汽车工厂已开始试点。整机商与系统集成商共同推动，短期内将以特定工位的单任务替代为主，逐步向灵活多任务演进。",
+      "children": [
+        {
+          "id": "ind_automotive",
+          "name": "汽车工厂应用",
+          "layer": "下游",
+          "tech_difficulty": 6,
+          "commercialization": 5,
+          "market_size_b": 10,
+          "companies": [
+            "Tesla",
+            "BMW",
+            "宝马工厂",
+            "比亚迪",
+            "蔚来"
+          ],
+          "investment_thesis": "汽车工厂是最先采用人形机器人的工业场景，涂装/检测/装配是核心工位。",
+          "children": [
+            {
+              "id": "ind_automotive_arm",
+              "name": "协作机械臂集成",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 7,
+              "market_size_b": 8,
+              "companies": [
+                "Universal Robots",
+                "ABB",
+                "FANUC",
+                "节卡机器人"
+              ],
+              "investment_thesis": "协作机器人已在汽车工厂广泛部署，人形机器人作为升级方向逐步替代。",
+              "children": [
+                {
+                  "id": "ind_automotive_arm_steel",
+                  "name": "结构用钢",
+                  "layer": "原材料",
+                  "tech_difficulty": 3,
+                  "commercialization": 9,
+                  "market_size_b": 1000,
+                  "companies": [
+                    "宝钢",
+                    "安赛乐米塔尔",
+                    "新日铁"
+                  ],
+                  "investment_thesis": "机械臂结构用钢为大宗商品，供应充足，价格周期性波动。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ind_electronics",
+          "name": "电子制造应用",
+          "layer": "下游",
+          "tech_difficulty": 7,
+          "commercialization": 4,
+          "market_size_b": 8,
+          "companies": [
+            "富士康",
+            "比亚迪电子",
+            "伟创力",
+            "捷普"
+          ],
+          "investment_thesis": "3C电子制造场景动作精细、节拍快，对灵巧手要求极高，短期商业化难度较大。",
+          "children": [
+            {
+              "id": "ind_electronics_vision",
+              "name": "工业视觉检测系统",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 7,
+              "market_size_b": 4,
+              "companies": [
+                "康耐视",
+                "基恩士",
+                "海康威视机器人"
+              ],
+              "investment_thesis": "工业视觉是电子制造质检的标配，AI赋能后检出率持续提升。",
+              "children": [
+                {
+                  "id": "ind_electronics_vision_cmos",
+                  "name": "工业CMOS图像传感器",
+                  "layer": "原材料",
+                  "tech_difficulty": 8,
+                  "commercialization": 6,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Sony",
+                    "安森美",
+                    "豪威科技"
+                  ],
+                  "investment_thesis": "高分辨率CMOS传感器是工业相机的核心器件，Sony占据高端市场。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ind_logistics",
+          "name": "物流分拣应用",
+          "layer": "下游",
+          "tech_difficulty": 5,
+          "commercialization": 6,
+          "market_size_b": 7,
+          "companies": [
+            "快仓智能",
+            "极智嘉",
+            "亚马逊Robotics",
+            "海柔创新"
+          ],
+          "investment_thesis": "物流分拣场景结构化程度高，机器人已大规模应用，人形机器人聚焦非结构化末端环节。",
+          "children": [
+            {
+              "id": "ind_logistics_conveyor",
+              "name": "自动化输送系统",
+              "layer": "中游",
+              "tech_difficulty": 4,
+              "commercialization": 8,
+              "market_size_b": 10,
+              "companies": [
+                "西门子",
+                "英特诺",
+                "雷勃电气"
+              ],
+              "investment_thesis": "输送线是物流中心的骨干基础设施，技术成熟，与机器人协同是趋势。",
+              "children": [
+                {
+                  "id": "ind_logistics_conveyor_belt",
+                  "name": "工业传送带材料",
+                  "layer": "原材料",
+                  "tech_difficulty": 3,
+                  "commercialization": 8,
+                  "market_size_b": 2,
+                  "companies": [
+                    "Intralox",
+                    "Habasit",
+                    "宝龙工业"
+                  ],
+                  "investment_thesis": "传送带材料（橡胶/模块化塑料）为标准工业品，供应充足。",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "name": "商业/服务场景",
+      "layer": "下游",
+      "tech_difficulty": 6,
+      "commercialization": 8,
+      "market_size_b": 200,
+      "companies": [
+        "Robotic Systems Lab",
+        "SoftBank Robotics",
+        "iRobot"
+      ],
+      "investment_thesis": "随着老龄化社会的加剧和家庭对便捷服务的需求增长，商业/服务场景的机器人市场具有巨大的增长潜力。",
+      "children": [
+        {
+          "id": "hotel_service",
+          "name": "酒店服务机器人",
+          "layer": "下游",
+          "tech_difficulty": 7,
+          "commercialization": 7,
+          "market_size_b": 20,
+          "companies": [
+            "ECOVACS Robotics",
+            "LG Uplus",
+            "Hikvision"
+          ],
+          "investment_thesis": "酒店服务机器人市场正在快速发展，酒店行业对提高服务效率和质量的需求推动该领域的增长。",
+          "children": [
+            {
+              "id": "cleaning_robot",
+              "name": "清洁机器人",
+              "layer": "中游",
+              "tech_difficulty": 5,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "iRobot",
+                "Neato Robotics",
+                "Ecovacs Robotics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "luggage_carrying_robot",
+              "name": "行李搬运机器人",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 8,
+              "market_size_b": 5,
+              "companies": [
+                "Porter Robots",
+                "Blue Prism Robotics",
+                "Robotise"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "room_service_robot",
+              "name": "客房服务机器人",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 8,
+              "market_size_b": 5,
+              "companies": [
+                "Hotel Robot Systems",
+                "Lely Industries",
+                "Hospi"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "retail_service",
+          "name": "零售服务机器人",
+          "layer": "下游",
+          "tech_difficulty": 6,
+          "commercialization": 8,
+          "market_size_b": 25,
+          "companies": [
+            "Fujitsu",
+            "Savioke",
+            "Nuro Robotics"
+          ],
+          "investment_thesis": "随着零售行业竞争加剧，服务机器人可以提高客户体验并优化库存管理。",
+          "children": [
+            {
+              "id": "guide_robot",
+              "name": "导购机器人",
+              "layer": "中游",
+              "tech_difficulty": 5,
+              "commercialization": 9,
+              "market_size_b": 7,
+              "companies": [
+                "RoboKind",
+                "Fujitsu",
+                "Akihiro"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "inventory_robot",
+              "name": "库存机器人",
+              "layer": "中游",
+              "tech_difficulty": 5,
+              "commercialization": 9,
+              "market_size_b": 7,
+              "companies": [
+                "ZAutomation",
+                "Llamasoft",
+                "Blue Yonder"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "cashier_robot",
+              "name": "收银机器人",
+              "layer": "中游",
+              "tech_difficulty": 5,
+              "commercialization": 8,
+              "market_size_b": 5,
+              "companies": [
+                "Ziraat Bank",
+                "NCR Corporation",
+                "Kiosked"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "home_service",
+          "name": "家庭服务机器人",
+          "layer": "下游",
+          "tech_difficulty": 6,
+          "commercialization": 7,
+          "market_size_b": 50,
+          "companies": [
+            "iRobot",
+            "Ecovacs Robotics",
+            "Roborock"
+          ],
+          "investment_thesis": "随着生活节奏加快和家庭对智能设备的需求增加，家庭服务机器人市场将持续增长。",
+          "children": [
+            {
+              "id": "vacuum_cleaner_robot",
+              "name": "吸尘机器人",
+              "layer": "中游",
+              "tech_difficulty": 4,
+              "commercialization": 9,
+              "market_size_b": 25,
+              "companies": [
+                "iRobot",
+                "Ecovacs Robotics",
+                "Neato Robotics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": " lawn_mowing_robot",
+              "name": "割草机器人",
+              "layer": "中游",
+              "tech_difficulty": 4,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "Ryobi",
+                "Bosch",
+                "Stihl"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "security_robot",
+              "name": "安全机器人",
+              "layer": "中游",
+              "tech_difficulty": 5,
+              "commercialization": 7,
+              "market_size_b": 5,
+              "companies": [
+                "Roam Robotics",
+                "Bosch Security Systems",
+                "Schneider Electric"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "software_customization",
+          "name": "软件定制",
+          "layer": "中游",
+          "tech_difficulty": 7,
+          "commercialization": 6,
+          "market_size_b": 15,
+          "companies": [
+            "Ayla Networks",
+            "Schneider Electric",
+            "Rockwell Automation"
+          ],
+          "investment_thesis": "软件定制服务是推动商业/服务场景机器人发展的关键，定制化软件可以提高机器人的适应性和效率。",
+          "children": [
+            {
+              "id": "robot_os",
+              "name": "机器人操作系统",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 7,
+              "market_size_b": 5,
+              "companies": [
+                "Robot Operating System (ROS)",
+                "Pioneer Robotics",
+                "Clearpath Robotics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "custom_applications",
+              "name": "定制应用",
+              "layer": "中游",
+              "tech_difficulty": 6,
+              "commercialization": 6,
+              "market_size_b": 5,
+              "companies": [
+                "Savioke",
+                "Blue Prism Robotics",
+                "ABB Robotics"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "data_integration",
+              "name": "数据集成",
+              "layer": "中游",
+              "tech_difficulty": 5,
+              "commercialization": 8,
+              "market_size_b": 5,
+              "companies": [
+                "Google Cloud",
+                "Microsoft Azure",
+                "Amazon Web Services"
+              ],
+              "children": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "医疗/特种场景",
+      "layer": "下游",
+      "tech_difficulty": 8,
+      "commercialization": 7,
+      "market_size_b": 150,
+      "companies": [
+        "Intuitive Surgical",
+        "Medtronic",
+        "Stryker"
+      ],
+      "investment_thesis": "随着人口老龄化加剧和医疗技术的进步，手术和康复机器人市场将持续增长。",
+      "children": [
+        {
+          "id": "medical_robotics",
+          "name": "手术机器人",
+          "layer": "下游",
+          "tech_difficulty": 9,
+          "commercialization": 8,
+          "market_size_b": 30,
+          "companies": [
+            "Intuitive Surgical",
+            "Mazor Robotics",
+            "Heartland Robotics"
+          ],
+          "investment_thesis": "手术机器人市场受益于精准手术需求和技术创新。",
+          "children": [
+            {
+              "id": "robotic_arm",
+              "name": "机器人臂",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 10,
+              "companies": [
+                "Rethink Robotics",
+                "Universal Robots",
+                "Adept Technology"
+              ],
+              "children": [
+                {
+                  "id": "motor",
+                  "name": "电机",
+                  "layer": "上游",
+                  "tech_difficulty": 7,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Nidec",
+                    "Panasonic",
+                    "Hitachi"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "controller",
+                  "name": "控制器",
+                  "layer": "上游",
+                  "tech_difficulty": 7,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Rockwell Automation",
+                    "Siemens",
+                    "Schneider Electric"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "sensor",
+                  "name": "传感器",
+                  "layer": "上游",
+                  "tech_difficulty": 8,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Honeywell",
+                    "Omron",
+                    "Balluff"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                }
+              ],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "navigation_system",
+              "name": "导航系统",
+              "layer": "中游",
+              "tech_difficulty": 8,
+              "commercialization": 9,
+              "market_size_b": 5,
+              "companies": [
+                "Medtronic",
+                "Stryker",
+                "Siemens Healthineers"
+              ],
+              "investment_thesis": "导航系统在手术机器人中扮演关键角色，技术进步将推动市场增长。",
+              "children": [
+                {
+                  "id": "imaging",
+                  "name": "成像技术",
+                  "layer": "上游",
+                  "tech_difficulty": 8,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "GE Healthcare",
+                    "Siemens Healthineers",
+                    "Philips Healthcare"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "tracking",
+                  "name": "跟踪技术",
+                  "layer": "上游",
+                  "tech_difficulty": 8,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Stryker",
+                    "Medtronic",
+                    "Intuitive Surgical"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rehabilitation_robotics",
+          "name": "康复机器人",
+          "layer": "下游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 20,
+          "companies": [
+            "ReWalk Robotics",
+            "Ekso Bionics",
+            "Hocoma"
+          ],
+          "investment_thesis": "康复机器人市场随着康复需求增加和技术的成熟而增长。",
+          "children": [
+            {
+              "id": "exoskeleton",
+              "name": "外骨骼",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 10,
+              "companies": [
+                "ReWalk Robotics",
+                "Ekso Bionics",
+                "Hocoma"
+              ],
+              "investment_thesis": "外骨骼技术为康复提供有力支持，市场需求持续增长。",
+              "children": [
+                {
+                  "id": "actuator",
+                  "name": "执行器",
+                  "layer": "上游",
+                  "tech_difficulty": 7,
+                  "commercialization": 8,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Harbin Electric",
+                    "Yaskawa Electric",
+                    "Rockwell Automation"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "control_system",
+                  "name": "控制系统",
+                  "layer": "上游",
+                  "tech_difficulty": 7,
+                  "commercialization": 8,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Siemens",
+                    "Rockwell Automation",
+                    "Schneider Electric"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "sensor",
+                  "name": "传感器",
+                  "layer": "上游",
+                  "tech_difficulty": 8,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Honeywell",
+                    "Omron",
+                    "Balluff"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                }
+              ]
+            },
+            {
+              "id": "gait_training",
+              "name": "步态训练",
+              "layer": "中游",
+              "tech_difficulty": 7,
+              "commercialization": 8,
+              "market_size_b": 10,
+              "companies": [
+                "Hocoma",
+                "ReWalk Robotics",
+                "Ekso Bionics"
+              ],
+              "investment_thesis": "步态训练技术对于康复至关重要，市场潜力巨大。",
+              "children": [
+                {
+                  "id": "motor",
+                  "name": "电机",
+                  "layer": "上游",
+                  "tech_difficulty": 7,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Nidec",
+                    "Panasonic",
+                    "Hitachi"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "control_system",
+                  "name": "控制系统",
+                  "layer": "上游",
+                  "tech_difficulty": 7,
+                  "commercialization": 8,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Siemens",
+                    "Rockwell Automation",
+                    "Schneider Electric"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                },
+                {
+                  "id": "sensor",
+                  "name": "传感器",
+                  "layer": "上游",
+                  "tech_difficulty": 8,
+                  "commercialization": 9,
+                  "market_size_b": 5,
+                  "companies": [
+                    "Honeywell",
+                    "Omron",
+                    "Balluff"
+                  ],
+                  "children": [],
+                  "investment_thesis": "该细分领域具备投资价值。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "medical_materials",
+          "name": "医疗级材料",
+          "layer": "上游",
+          "tech_difficulty": 8,
+          "commercialization": 7,
+          "market_size_b": 15,
+          "companies": [
+            "Stryker",
+            "Medtronic",
+            "Johnson & Johnson"
+          ],
+          "investment_thesis": "医疗级材料在医疗器械中至关重要，市场需求稳定增长。",
+          "children": [
+            {
+              "id": "plastics",
+              "name": "塑料",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "metals",
+              "name": "金属",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "ceramics",
+              "name": "陶瓷",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "sensors",
+          "name": "传感器",
+          "layer": "上游",
+          "tech_difficulty": 8,
+          "commercialization": 9,
+          "market_size_b": 10,
+          "companies": [
+            "Honeywell",
+            "Omron",
+            "Balluff"
+          ],
+          "investment_thesis": "传感器在医疗设备中用于监测和反馈，市场需求持续增长。",
+          "children": [
+            {
+              "id": "pressure_sensor",
+              "name": "压力传感器",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "temperature_sensor",
+              "name": "温度传感器",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            },
+            {
+              "id": "humidity_sensor",
+              "name": "湿度传感器",
+              "layer": "原材料",
+              "children": [],
+              "tech_difficulty": 5,
+              "commercialization": 5,
+              "market_size_b": 1.0,
+              "companies": [],
+              "investment_thesis": "该细分领域具备投资价值。"
+            }
+          ]
+        },
+        {
+          "id": "regulatory_compliance",
+          "name": "监管合规",
+          "layer": "上游",
+          "tech_difficulty": 7,
+          "commercialization": 8,
+          "market_size_b": 5,
+          "companies": [
+            "TÜV SÜD",
+            "Bureau Veritas",
+            "Intertek"
+          ],
+          "investment_thesis": "监管合规对于医疗器械的上市至关重要，市场需求稳定。",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

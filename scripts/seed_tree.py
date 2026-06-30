@@ -1,11 +1,13 @@
 """
 One-time script: generate the initial 2026-06.json seed snapshot.
-Calls claude-opus-4-7 once per L1 node to generate its full supply-chain subtree.
+Calls LLM once per L1 node to generate its full supply-chain subtree.
 Merges into data/snapshots/2026-06.json.
 
 Usage:
   cd /Users/zhangrui1/embodied-ai-landscape
-  ANTHROPIC_API_KEY=... python scripts/seed_tree.py
+  LLM_API_KEY=... LLM_BASE_URL=... LLM_MODEL=... python scripts/seed_tree.py
+
+Defaults to Zhipu GLM-4-Flash (free tier) if env vars not set.
 """
 import json, os, sys, time
 from datetime import datetime, timezone
@@ -13,10 +15,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-import anthropic
+from openai import OpenAI
 from validate_snapshot import validate
 
-client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+_api_key = os.environ.get("LLM_API_KEY", "bfdd3095e8754436ba76f8f66e57b282.WZpoqLoWbO14UIIJ")
+_base_url = os.environ.get("LLM_BASE_URL", "https://open.bigmodel.cn/api/paas/v4/")
+_model = os.environ.get("LLM_MODEL", "glm-4-flash")
+
+client = OpenAI(api_key=_api_key, base_url=_base_url)
 
 SYSTEM = """你是具身智能产业链的专业投资研究员。
 你的任务是为给定的产业节点生成完整的多层供应链树，深入到原材料层级。
@@ -105,18 +111,34 @@ def generate_subtree(node: dict) -> dict:
 
 JSON输出："""
 
-    resp = client.messages.create(
-        model="claude-opus-4-7",
-        max_tokens=8192,
-        system=SYSTEM,
-        messages=[{"role": "user", "content": user}],
+    resp = client.chat.completions.create(
+        model=_model,
+        max_tokens=4096,
+        messages=[
+            {"role": "system", "content": SYSTEM},
+            {"role": "user", "content": user},
+        ],
     )
-    raw = resp.content[0].text.strip()
-    return json.loads(strip_code_fence(raw))
+    raw = resp.choices[0].message.content.strip()
+    parsed = json.loads(strip_code_fence(raw))
+    return repair_node(parsed)
 
 
 def count_nodes(node: dict) -> int:
-    return 1 + sum(count_nodes(c) for c in node.get("children", []))
+    if not isinstance(node, dict):
+        return 0
+    return 1 + sum(count_nodes(c) for c in node.get("children", []) if isinstance(c, dict))
+
+
+def repair_node(node) -> dict:
+    """Recursively repair malformed LLM output: filter non-dict children."""
+    if not isinstance(node, dict):
+        return {}
+    children = node.get("children", [])
+    if not isinstance(children, list):
+        children = []
+    node["children"] = [repair_node(c) for c in children if isinstance(c, dict)]
+    return node
 
 
 def main():
@@ -126,14 +148,22 @@ def main():
     nodes = []
     for l1 in L1_NODES:
         print(f"Generating subtree for {l1['id']}...", flush=True)
-        try:
-            node = generate_subtree(l1)
-            total = count_nodes(node)
-            nodes.append(node)
-            print(f"  ✓ {l1['id']}: {len(node.get('children', []))} L2 children, {total} total nodes", flush=True)
-        except Exception as e:
-            print(f"  ✗ {l1['id']} FAILED: {e}", flush=True)
-            raise
+        node = None
+        for attempt in range(3):
+            try:
+                node = generate_subtree(l1)
+                if node.get("children"):
+                    break
+                print(f"  ↺ {l1['id']} returned 0 children, retrying ({attempt + 1}/3)...", flush=True)
+                time.sleep(2)
+            except Exception as e:
+                print(f"  ✗ {l1['id']} attempt {attempt + 1} FAILED: {e}", flush=True)
+                if attempt == 2:
+                    raise
+                time.sleep(2)
+        total = count_nodes(node)
+        nodes.append(node)
+        print(f"  ✓ {l1['id']}: {len(node.get('children', []))} L2 children, {total} total nodes", flush=True)
         time.sleep(1)
 
     snapshot = {

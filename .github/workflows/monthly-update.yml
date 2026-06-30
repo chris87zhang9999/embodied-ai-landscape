@@ -1,0 +1,69 @@
+name: Monthly Snapshot Update
+
+on:
+  schedule:
+    - cron: '0 1 1 * *'   # 01:00 UTC day 1 each month = 09:00 CST
+  workflow_dispatch:
+    inputs:
+      prev_period:
+        description: 'Previous period (e.g. 2026-06)'
+        required: true
+      new_period:
+        description: 'New period (e.g. 2026-07)'
+        required: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Compute periods (scheduled run)
+        if: github.event_name == 'schedule'
+        run: |
+          PREV=$(date -d "$(date +%Y-%m-01) -1 month" +%Y-%m)
+          NEW=$(date +%Y-%m)
+          echo "PREV_PERIOD=$PREV" >> $GITHUB_ENV
+          echo "NEW_PERIOD=$NEW" >> $GITHUB_ENV
+
+      - name: Set periods (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "PREV_PERIOD=${{ github.event.inputs.prev_period }}" >> $GITHUB_ENV
+          echo "NEW_PERIOD=${{ github.event.inputs.new_period }}" >> $GITHUB_ENV
+
+      - name: Generate snapshot
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          HUMANOID_MCP_URL: ${{ secrets.HUMANOID_MCP_URL }}
+          HUMANOID_MCP_TOKEN: ${{ secrets.HUMANOID_MCP_TOKEN }}
+        run: python scripts/generate_snapshot.py
+
+      - name: Update manifest and copy data to public
+        run: |
+          python3 - <<'EOF'
+          import json, glob, re, shutil
+          from pathlib import Path
+          files = sorted(glob.glob("data/snapshots/[0-9][0-9][0-9][0-9]-[0-9][0-9].json"))
+          periods = [re.search(r'(\d{4}-\d{2})\.json', f).group(1) for f in files]
+          Path("public/snapshots-manifest.json").write_text(json.dumps({"periods": periods}))
+          shutil.copytree("data", "public/data", dirs_exist_ok=True)
+          EOF
+
+      - name: Commit new snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots/ public/
+          git diff --staged --quiet || git commit -m "data: auto-update snapshot for ${{ env.NEW_PERIOD }}"
+          git push
