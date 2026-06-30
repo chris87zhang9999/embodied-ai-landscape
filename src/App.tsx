@@ -3,6 +3,8 @@ import { useSnapshots, diffNodes } from './hooks/useSnapshots'
 import { useDrillDown } from './hooks/useDrillDown'
 import BubbleChart from './components/BubbleChart'
 import TimelineBar from './components/TimelineBar'
+import Tooltip from './components/Tooltip'
+import SidePanel from './components/SidePanel'
 import type { IndustryNode } from './types'
 
 function Breadcrumbs({
@@ -37,6 +39,7 @@ export default function App() {
   const { snapshots, periods, loading } = useSnapshots()
   const [period, setPeriod] = useState<string>('')
   const [selectedNode, setSelectedNode] = useState<IndustryNode | null>(null)
+  const [tooltip, setTooltip] = useState<{ node: IndustryNode; x: number; y: number } | null>(null)
 
   useEffect(() => {
     if (periods.length > 0 && !period) setPeriod(periods[periods.length - 1])
@@ -80,33 +83,45 @@ export default function App() {
         <TimelineBar periods={periods} selected={period} onChange={handlePeriodChange} />
         <Breadcrumbs crumbs={breadcrumb} onNavigate={drillTo} />
 
-        {!allCurrentAreLeaves ? (
-          <BubbleChart
-            nodes={currentNodes}
-            prevNodes={prevSnap?.nodes}
-            selectedId={selectedNode?.id}
-            onNodeClick={node => {
-              setSelectedNode(node)
-              if (!isLeaf(node)) drillInto(node)
-            }}
-            onNodeHover={() => {}}
-          />
-        ) : (
-          <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-            <div className="text-white font-bold mb-2">
-              {parentNode?.name ?? '底层节点'} — 原材料/底层构成
-            </div>
-            <div className="space-y-2">
-              {currentNodes.map(n => (
-                <div key={n.id} className="flex items-center gap-3 text-sm">
-                  <span className="text-gray-300 w-32 shrink-0">{n.name}</span>
-                  <span className="text-blue-400">${n.market_size_b}B</span>
-                  <span className="text-gray-500 truncate">{n.investment_thesis}</span>
+        <div className="flex gap-5 items-start">
+          <div className="relative shrink-0">
+            {!allCurrentAreLeaves ? (
+              <BubbleChart
+                nodes={currentNodes}
+                prevNodes={prevSnap?.nodes}
+                selectedId={selectedNode?.id}
+                onNodeClick={node => {
+                  setSelectedNode(node)
+                  if (!isLeaf(node)) drillInto(node)
+                }}
+                onNodeHover={(n, x, y) => setTooltip(n ? { node: n, x, y } : null)}
+              />
+            ) : (
+              <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
+                <div className="text-white font-bold mb-2">
+                  {parentNode?.name ?? '底层节点'} — 原材料/底层构成
                 </div>
-              ))}
-            </div>
+                <div className="space-y-2">
+                  {currentNodes.map(n => (
+                    <div key={n.id} className="flex items-center gap-3 text-sm">
+                      <span className="text-gray-300 w-32 shrink-0">{n.name}</span>
+                      <span className="text-blue-400">${n.market_size_b}B</span>
+                      <span className="text-gray-500 truncate">{n.investment_thesis}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            <Tooltip node={tooltip?.node ?? null} x={tooltip?.x ?? 0} y={tooltip?.y ?? 0} />
           </div>
-        )}
+          {currentSnap && (
+            <SidePanel
+              snapshot={currentSnap}
+              selectedNode={selectedNode}
+              onClose={() => setSelectedNode(null)}
+            />
+          )}
+        </div>
       </div>
     </div>
   )
