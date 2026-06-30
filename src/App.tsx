@@ -5,6 +5,9 @@ import BubbleChart from './components/BubbleChart'
 import TimelineBar from './components/TimelineBar'
 import Tooltip from './components/Tooltip'
 import SidePanel from './components/SidePanel'
+import LeafView from './components/LeafView'
+import Header from './components/Header'
+import Legend from './components/Legend'
 import type { IndustryNode } from './types'
 
 function Breadcrumbs({
@@ -62,6 +65,7 @@ export default function App() {
   const handlePeriodChange = (p: string) => {
     setPeriod(p)
     setSelectedNode(null)
+    setTooltip(null)
   }
 
   if (loading) {
@@ -74,18 +78,17 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-950 p-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-2xl font-bold text-white mb-1">具身智能产业链投资图谱</h1>
-        <p className="text-gray-500 text-sm mb-6">
-          X轴：技术壁垒 · Y轴：商业化成熟度 · 气泡大小：可寻址市场规模 · 点击气泡深入供应链
-        </p>
-
+      <div className="max-w-[1200px] mx-auto">
+        <Header />
         <TimelineBar periods={periods} selected={period} onChange={handlePeriodChange} />
         <Breadcrumbs crumbs={breadcrumb} onNavigate={drillTo} />
+        <Legend />
 
         <div className="flex gap-5 items-start">
           <div className="relative shrink-0">
-            {!allCurrentAreLeaves ? (
+            {allCurrentAreLeaves && parentNode ? (
+              <LeafView parentNode={parentNode} />
+            ) : (
               <BubbleChart
                 nodes={currentNodes}
                 prevNodes={prevSnap?.nodes}
@@ -96,24 +99,14 @@ export default function App() {
                 }}
                 onNodeHover={(n, x, y) => setTooltip(n ? { node: n, x, y } : null)}
               />
-            ) : (
-              <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-                <div className="text-white font-bold mb-2">
-                  {parentNode?.name ?? '底层节点'} — 原材料/底层构成
-                </div>
-                <div className="space-y-2">
-                  {currentNodes.map(n => (
-                    <div key={n.id} className="flex items-center gap-3 text-sm">
-                      <span className="text-gray-300 w-32 shrink-0">{n.name}</span>
-                      <span className="text-blue-400">${n.market_size_b}B</span>
-                      <span className="text-gray-500 truncate">{n.investment_thesis}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             )}
-            <Tooltip node={tooltip?.node ?? null} x={tooltip?.x ?? 0} y={tooltip?.y ?? 0} />
+            <Tooltip
+              node={tooltip?.node ?? null}
+              x={tooltip?.x ?? 0}
+              y={tooltip?.y ?? 0}
+            />
           </div>
+
           {currentSnap && (
             <SidePanel
               snapshot={currentSnap}
