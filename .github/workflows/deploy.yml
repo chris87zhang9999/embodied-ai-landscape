@@ -23,9 +23,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - run: npm install
+      - name: Install dependencies
+        run: |
+          npm config set registry https://registry.npmjs.org
+          rm -f package-lock.json
+          npm install
 
       - name: Copy data to public and update manifest
         run: |
